@@ -43,6 +43,7 @@ jobs:
         repository: nvaccess/addon-datastore-validation
         path: validation
         submodules: true
+        ref: supportTranslations
     - name: Install addon-datastore-validation dependencies
       run: |
         python -m pip install --upgrade wheel
@@ -52,6 +53,7 @@ jobs:
       with:
         repository: nvaccess/addon-datastore-transform
         path: transform
+        ref: supportTranslations
     - name: Validate metadata
       run: validation/runvalidate ${{ steps.getMetadata.outputs.result }} ./transform/nvdaAPIVersions.json --output ./validationErrors.md
     - name: Post validation errors as comment
