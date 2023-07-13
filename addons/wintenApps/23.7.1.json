@@ -21,9 +21,10 @@
 		"patch": 0
 	},
 	"channel": "stable",
-	"publisher": "Joseph Lee <jospeh.lee22590@gmail.com>",
+	"publisher": "Sean testing",
 	"sourceURL": "https://github.com/josephsl/wintenApps",
 	"license": "GPL v2",
 	"homepage": "https://addons.nvda-project.org/",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html"
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"translations": []
 }
