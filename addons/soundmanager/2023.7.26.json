@@ -1,0 +1,36 @@
+{
+	"addonId": "soundmanager",
+	"displayName": "Sound Manager",
+	"URL": "$env:url",
+	"description": "Manages Windows and applications volumes directly within NVDA",
+	"sha256": "32fdda9f65812d9b9252f65aa7f783afa67a1e49ed4da969eb15150acbcbee15",
+	"addonVersionName": "2023.07.26",
+	"addonVersionNumber": {
+		"major": 2023,
+		"minor": 7,
+		"patch": 26
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "$env:channel",
+	"publisher": "$env:publisher",
+	"sourceURL": "$env:sourceUrl",
+	"license": "$env:licName",
+	"homepage": "https://github.com/yplassiard/nvda-soundmanager",
+	"licenseURL": "$env:licUrl",
+	"translations": [
+		{
+			"language": "fr",
+			"displayName": "Sound Manager",
+			"description": "G\u00e9rer le volume des applications directement depuis NVDA."
+		}
+	]
+}
