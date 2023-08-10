@@ -1,8 +1,6 @@
 # Submission Guide
 If your add-on was hosted on [addonFiles](https://github.com/nvaccess/addonFiles) please read the [migrating to datastore guide](./migratingFromAddonFiles.md).
 
-Submitted add-ons should comply with the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md)
-
 ## Background
 Submitting an add-on version is done via a GitHub issue form.
 A JSON metadata file is generated from the issue form and the add-on's manifest.
@@ -13,9 +11,17 @@ Automated validation checks are run against the pull request.
 If there are validation errors, they will be commented on the pull request.
 Otherwise, the pull request will be merged, the issue will be closed and the add-on will become available in the Add-on Store.
 
-It is expected that submitters do not hijack add-on IDs by submitting an add-on which shares an add-on ID of an existing add-on.
-If you are an add-on author and your add-on ID has been hijacked, please open an issue or contact <info@nvaccess.org>.
-Submitters which abuse this process will have their submission approval revoked.
+### Approval process
+Publishers must be approved to submit add-ons, on a per add-on basis.
+If you do not maintain the submitted add-on's repository, it is expected that you have authorisation to publish the add-on from the authors.
+
+If you submit many add-ons you may be granted trusted submitter status, which allows you to publish/submit for all add-ons.
+It is expected that trusted submitters do not abuse this process.
+
+Submitted add-ons should comply with the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
+
+Submitters which abuse the submission process will have their submitter approval revoked.
+Please report any issues with submitted add-ons to <info@nvacces.org>.
 
 ## Steps to submit an add-on
 1. Select ["Add-on registration" from the new issue options](https://github.com/nvaccess/addon-datastore/issues/new/choose).
