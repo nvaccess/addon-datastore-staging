@@ -18,10 +18,16 @@
   "75214948": {
     "githubName": "RPTools-org",
     "addons": [
-        "controlTypeBeforeLabel",
-        "filezilla",
-        "landropPlus",
-        "thunderbirdPlus"
+      "controlTypeBeforeLabel",
+      "filezilla",
+      "landropPlus",
+      "thunderbirdPlus"
     ]
+  },
+  "7090342": {
+    "addons": [
+      "IntelliJImproved"
+    ],
+    "githubName": "seanbudd"
   }
 }
