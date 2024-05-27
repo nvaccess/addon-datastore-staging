@@ -81,15 +81,21 @@ jobs:
         cd datastore
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git checkout -b ${{ github.event.issue.user.login }}${{ steps.get-data.outputs.issueNumber }}
+        git checkout -b ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
         git add .
         git commit -m "Submit add-on"
-        git push origin ${{ github.event.issue.user.login }}${{ steps.get-data.outputs.issueNumber }}
+        git push origin ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
     - name: Upload add-on
       uses: actions/upload-artifact@v4
       with:
         name: addon
         path: addon.nvda-addon
+    - name: Install VirusTotal
+      run: choco install vt-cli
+    - name: Scan add-on with VirusTotal    
+      env:
+        API_KEY: ${{ secrets.virusTotalApiKey }}
+      run: vt scan file -k $env:API_KEY addon.nvda-addon
   call-workflow-passing-data:
     needs: check-addon
     uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
@@ -98,3 +104,5 @@ jobs:
       issueAuthorId: ${{ github.event.issue.user.id }}
       issueAuthorName: ${{ github.event.issue.user.login }}
       issueTitle: ${{ github.event.issue.title }}
+    secrets:
+      virusTotalApiKey: ${{ secrets.virusTotalApiKey }}
