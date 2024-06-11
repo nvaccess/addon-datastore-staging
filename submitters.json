@@ -496,5 +496,11 @@
       "showSelectionWhenBrailleTetheredToReview"
     ],
     "githubName": "burmancomp"
+  },
+  "7090342": {
+    "addons": [
+      "wordNav"
+    ],
+    "githubName": "seanbudd"
   }
 }
