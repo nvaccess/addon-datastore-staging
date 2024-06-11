@@ -92,7 +92,7 @@ jobs:
         path: addon.nvda-addon
     - name: Install VirusTotal
       run: choco install vt-cli
-    - name: Scan add-on with VirusTotal    
+    - name: Scan add-on with VirusTotal
       env:
         API_KEY: ${{ secrets.virusTotalApiKey }}
       run: vt scan file -k $env:API_KEY addon.nvda-addon
