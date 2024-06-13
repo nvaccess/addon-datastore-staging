@@ -496,5 +496,11 @@
       "showSelectionWhenBrailleTetheredToReview"
     ],
     "githubName": "burmancomp"
+  },
+  "7090342": {
+    "addons": [
+      "radioCenter"
+    ],
+    "githubName": "seanbudd"
   }
 }
