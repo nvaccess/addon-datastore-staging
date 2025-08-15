@@ -766,7 +766,8 @@
 	},
 	"7090342": {
 		"addons": [
-			"AISummarizer"
+			"AISummarizer",
+			"deltaTalk"
 		],
 		"githubName": "seanbudd"
 	}
