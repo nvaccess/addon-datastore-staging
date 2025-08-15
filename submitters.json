@@ -763,5 +763,11 @@
 			"goldwave"
 		],
 		"githubName": "day-garwood"
+	},
+	"7090342": {
+		"addons": [
+			"AISummarizer"
+		],
+		"githubName": "seanbudd"
 	}
 }
