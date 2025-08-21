@@ -15,7 +15,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Checkout datastore repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         path: datastore
     - name: Get data
@@ -26,15 +26,15 @@ jobs:
           const setOutputFromIssue = require('./datastore/.github/workflows/getData.js')
           setOutputFromIssue({context, core})
     - name: Checkout validate repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         repository: nvaccess/addon-datastore-validation
         submodules: true
         path: validation
-    - name: Set up Python 3.11
+    - name: Set up Python 3.13
       uses: actions/setup-python@v5
       with:
-        python-version: 3.11
+        python-version: 3.13
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Download add-on
@@ -86,8 +86,8 @@ jobs:
         git checkout -b ${{ env.branchName }}
         git add .
         git commit -m "Submit add-on"
-        git pull --rebase
-        git push --set-upstream origin ${{ env.branchName }}
+        # Force push to the branch, as we may need to be handling a resubmission attempt
+        git push -f origin ${{ env.branchName }}
     - name: Upload add-on
       uses: actions/upload-artifact@v4
       with:
