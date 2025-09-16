@@ -791,5 +791,11 @@
 			"audioScreen"
 		],
 		"githubName": "jacob-kruger-work"
+	},
+	"7090342": {
+		"addons": [
+			"deltaTalk"
+		],
+		"githubName": "seanbudd"
 	}
 }
