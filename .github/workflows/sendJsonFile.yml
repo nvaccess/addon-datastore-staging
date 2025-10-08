@@ -29,6 +29,7 @@ jobs:
       uses: actions/checkout@v5
       with:
         repository: nvaccess/addon-datastore-validation
+        ref: debug
         submodules: true
         path: validation
     - name: Install the latest version of uv
